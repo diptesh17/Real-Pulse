@@ -5,7 +5,7 @@ const Properties = () => {
   return (
     <div>
       <h1 className="text-3xl">Welcome </h1>
-      <Link href="/properties">Show Properties</Link>
+      <Link href="/">Go home</Link>
     </div>
   );
 };
