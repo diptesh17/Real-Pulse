@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PrpertyPulse | Find The Perfect Rental",
+  title: "PropertyPulse | Find The Perfect Rental",
   description: "Find your dream rental property",
   keywords: "rental , find rentals , find property",
 };
