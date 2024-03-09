@@ -3,14 +3,21 @@ import Link from "next/link";
 import React from "react";
 import logo from "@/assets/images/images/properties/a1.jpg";
 
-const PropertyCard = () => {
+const PropertyCard = ({ property }) => {
   return (
     <div className="rounded-xl shadow-md relative">
-      <Image src={logo} alt="" className="w-full h-auto rounded-t-xl" />
+      <Image
+        src={`/images/properties/${property.images[0]}`}
+        alt=""
+        className="w-full h-auto rounded-t-xl"
+        height={0}
+        width={0}
+        sizes="100vw"
+      />
 
       <div className="p-4">
         <div className="text-left md:text-center lg:text-left mb-6">
-          <div className="text-gray-600">Apartment</div>
+          <div className="text-gray-600">{property.type}</div>
           <h3 className="text-xl font-bold">Boston Commons Retreat</h3>
         </div>
         <h3 className="absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
