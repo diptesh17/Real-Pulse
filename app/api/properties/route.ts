@@ -1,10 +1,14 @@
 import connectDB from "@/config/database";
+import Property from "@/models/Property";
 
-export const GET = async (request) => {
+// Get : api/properties
+export const GET = async (Response: any) => {
   try {
     await connectDB();
 
-    return new Response(JSON.stringify({ message: "Initial Route" }), {
+    const Properties = await Property.find({});
+
+    return new Response(JSON.stringify(Properties), {
       status: 200,
     });
   } catch (error) {
