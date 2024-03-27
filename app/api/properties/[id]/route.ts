@@ -12,7 +12,7 @@ export const GET = async (
     const property = await Property.findById(params.id);
 
     if (!property) {
-      return new Response("Page Not Found", { status: 404 });
+      return new Response("Property  Not Found", { status: 404 });
     }
 
     return new Response(JSON.stringify(property), {
