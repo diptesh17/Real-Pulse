@@ -27,7 +27,9 @@ async function fetchProperty(id) {
     if (!apidomain) {
       return null;
     }
-    const res = await fetch(`${apidomain}/properties/${id}`);
+    const res = await fetch(`${apidomain}/properties/${id}`, {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error("Failed to fetch data ");
