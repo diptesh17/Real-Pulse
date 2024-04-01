@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "config/database.js"
+    "config/database.js",
+    "components/PropertyCard.jsx"
   ],
   "exclude": ["node_modules"]
 }

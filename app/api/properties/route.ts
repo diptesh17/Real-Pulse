@@ -1,7 +1,6 @@
 import connectDB from "@/config/database";
 import Property from "@/models/Property";
 import { getSessionUser } from "@/utils/getSessionUser";
-import { request } from "http";
 import cloudinary from "@/config/cloudinary";
 // Get : api/properties
 export const GET = async (Response: any) => {
@@ -105,7 +104,6 @@ export const POST = async (request) => {
     //   status: 200,
     // });
   } catch (error) {
-    console.log(error);
     return new Response("Failed to add property", { status: 500 });
   }
 };
