@@ -7,7 +7,7 @@ async function fetchProperties() {
     if (!apidomain) {
       return [];
     }
-    const res = await fetch(`${apidomain}/properties`);
+    const res = await fetch(`${apidomain}/properties`, { cache: "no-store" });
 
     if (!res.ok) {
       throw new Error("Failed to fetch data ");
