@@ -4,7 +4,7 @@ import { getSessionUser } from "@/utils/getSessionUser";
 import cloudinary from "@/config/cloudinary";
 
 // Get : api/properties
-export const GET = async () => {
+export const GET = async (request) => {
   try {
     await connectDB();
     const properties = await Property.find({});
