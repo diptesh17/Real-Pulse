@@ -1,12 +1,8 @@
 import connectDB from "@/config/database";
 import Property from "@/models/Property";
 import { getSessionUser } from "@/utils/getSessionUser";
-import { NextRequest } from "next/server";
 // Get : api/properties/:id
-export const GET = async (
-  req: NextRequest,
-  { params }: { params: { id: string } }
-) => {
+export const GET = async (req, { params }) => {
   try {
     await connectDB();
 
@@ -26,10 +22,7 @@ export const GET = async (
 };
 
 // Delete : api/properties/:id
-export const DELETE = async (
-  req: NextRequest,
-  { params }: { params: { id: string } }
-) => {
+export const DELETE = async (req, { params }) => {
   try {
     const propertyId = params.id;
 
@@ -66,10 +59,7 @@ export const DELETE = async (
 };
 
 // PUT /api/properties/:id
-export const PUT = async (
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) => {
+export const PUT = async (request, { params }) => {
   try {
     await connectDB();
     const sessionUser = await getSessionUser();

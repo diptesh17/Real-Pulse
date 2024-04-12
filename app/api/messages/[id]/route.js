@@ -3,13 +3,9 @@ import Message from "@/models/Message";
 import { getSessionUser } from "@/utils/getSessionUser";
 
 export const dynamic = "force-dynamic";
-import { NextRequest } from "next/server";
 
 // PUT /api/messages/:id
-export const PUT = async (
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) => {
+export const PUT = async (request, { params }) => {
   try {
     await connectDB();
 
@@ -47,8 +43,7 @@ export const PUT = async (
 };
 
 // DELETE /api/messages/:id
-export const DELETE = async (request: NextRequest,
-  { params }: { params: { id: string } }) => {
+export const DELETE = async (request, { params }) => {
   try {
     await connectDB();
 

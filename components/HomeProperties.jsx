@@ -1,5 +1,5 @@
-import PropertyCard from "@/components/PropertyCard";
 import Link from "next/link";
+import PropertyCard from "@/components/PropertyCard";
 import { fetchProperties } from "@/utils/requests";
 
 const HomeProperties = async () => {
@@ -27,6 +27,7 @@ const HomeProperties = async () => {
           </div>
         </div>
       </section>
+
       <section className="m-auto max-w-lg my-10 px-6">
         <Link
           href="/properties"
@@ -38,5 +39,4 @@ const HomeProperties = async () => {
     </>
   );
 };
-
 export default HomeProperties;
