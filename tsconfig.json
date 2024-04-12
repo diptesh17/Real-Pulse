@@ -28,7 +28,10 @@
     ".next/types/**/*.ts",
     "config/database.js",
     "components/PropertyCard.jsx",
-    "context/GlobalContext.js"
+    "context/GlobalContext.js",
+    "app/api/bookmarks/route.ts",
+    "app/api/bookmarks/check/route.ts",
+    "app/api/auth/[...nextauth]/route.ts"
   ],
   "exclude": ["node_modules"]
 }
