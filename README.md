@@ -2,8 +2,6 @@
 
 > A web application to help you find your next rental property.
 
-<img src="/public/images/screen.jpg" />
-
 ## Features
 
 Here are some of the current features that Real Pulse has:
