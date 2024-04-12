@@ -31,7 +31,10 @@
     "context/GlobalContext.js",
     "app/api/bookmarks/route.ts",
     "app/api/bookmarks/check/route.ts",
-    "app/api/auth/[...nextauth]/route.ts"
+    "app/api/auth/[...nextauth]/route.ts",
+    "app/api/messages/route.js",
+    "app/api/properties/route.js",
+    "app/api/properties/search/route.js"
   ],
   "exclude": ["node_modules"]
 }
